@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import models.Message;
+import models.Task;
 import utils.DBUtil;
 
 /**
@@ -35,7 +35,7 @@ public class NewServlet extends HttpServlet {
         EntityManager em = DBUtil.createEntityManager();
 
         // Messageのインスタンスを生成
-        Message m = new Message();
+        Task m = new Task();
 
         // mの各フィールドにデータを代入
         String title = "taro";
